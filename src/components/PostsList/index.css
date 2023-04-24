@@ -1,0 +1,10 @@
+/* postList component */
+
+.postList{
+    background-color: lightgreen;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
