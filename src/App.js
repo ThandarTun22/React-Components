@@ -3,6 +3,7 @@ import './App.css';
 import { useState } from 'react';
 import Navbar from './components/Navbar/index';
 import PostsList from './components/PostsList/index';
+import Modal from './components/Modal/index'
 
 function App() {
 
@@ -25,6 +26,11 @@ function App() {
    <>
     <Navbar/>
     <PostsList posts={posts}></PostsList>
+    <Modal>
+      {/* modal content */}
+      <h1>Zoom class is available now.</h1>
+      <p>feel free to <a href=''>here</a></p>
+    </Modal>
  
    </>
   );
