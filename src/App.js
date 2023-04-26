@@ -3,6 +3,7 @@ import './App.css';
 import { useState } from 'react';
 import Navbar from './components/Navbar/index';
 import PostsList from './components/PostsList/index';
+import PostForm from './components/PostForm/index';
 import Modal from './components/Modal/index'
 
 function App() {
@@ -26,11 +27,8 @@ function App() {
    <>
     <Navbar setShowModal={setShowModal}/>
     <PostsList posts={posts}></PostsList>
-    {showModal && <Modal danger={true}>
-      {/* modal content */}
-      <h1>Zoom class is available now.</h1>
-      <p>feel free to <a href=''>here</a></p>
-      <button onClick={()=>setShowModal(false)}>close</button>
+    {showModal && <Modal danger={true}  setShowModal={setShowModal}>
+      <PostForm />
     </Modal>}
  
    </>
