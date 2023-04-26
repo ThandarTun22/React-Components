@@ -26,7 +26,7 @@ function App() {
    <>
     <Navbar setShowModal={setShowModal}/>
     <PostsList posts={posts}></PostsList>
-    {showModal && <Modal>
+    {showModal && <Modal danger={true}>
       {/* modal content */}
       <h1>Zoom class is available now.</h1>
       <p>feel free to <a href=''>here</a></p>
